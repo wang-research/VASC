@@ -7,6 +7,7 @@ Single cell RNA sequencing (scRNA-seq) is a powerful technique to analyze the tr
 + Python 3.5+
 + numpy 1.12.1
 + h5py 2.7.0
++ sklearn 0.18.1
 + tensorflow 1.1.0
 + keras 2.0.6
 
