@@ -5,7 +5,11 @@ Single cell RNA sequencing (scRNA-seq) is a powerful technique to analyze the tr
 
 ## Prerequisites
 + Python 3.5+
-+ numpy
-+ h5py
-+ tensorflow
-+ keras
++ numpy 1.12.1
++ h5py 2.7.0
++ tensorflow 1.1.0
++ keras 2.0.6
+
+We recommend to install the newest Anaconda.
+
+
