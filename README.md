@@ -10,6 +10,7 @@ Single cell RNA sequencing (scRNA-seq) is a powerful technique to analyze the tr
 + tensorflow 1.1.0
 + keras 2.0.6
 
-We recommend to install the newest Anaconda.
+We recommend to install the newest Anaconda from https://www.continuum.io/downloads.
+
 
 
