@@ -19,4 +19,7 @@ Two python files are included:
 - helpers.py: auxiliary functions
 
 ## Demo
+We gave a demo.py and config.py to demonstrate the use of VASC.
 
+## Data
+A small dataset from Biase is included for demonstration.
