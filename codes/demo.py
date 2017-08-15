@@ -6,13 +6,13 @@ from config import config
 
 if __name__ == '__main__':
     DATASET = 'biase' #sys.argv[1]
-    PREFIX = 'pollen' #sys.argv[2]
+    PREFIX = 'biase' #sys.argv[2]
     
-    filename = '../data/'+DATASET+'.txt'
+    filename = DATASET+'.txt'
     data = open( filename )
     head = data.readline().rstrip().split()
     
-    label_file = open( '../data/'+DATASET+'_label.txt' )
+    label_file = open( DATASET+'_label.txt' )
     label_dict = {}
     for line in label_file:
         temp = line.rstrip().split()
@@ -68,7 +68,6 @@ if __name__ == '__main__':
                     batch_size=batch_size,
                     prefix=PREFIX,
                     label=label,
-                    log=config['log'],
                     scale=config['scale'],
                     patience=config['patience'] 
                 )

@@ -66,11 +66,10 @@ class NoiseLayer(Layer):
         return dict(list(base_config.items()) + list(config.items()))
  
 class VASC:
-    def __init__(self,in_dim,loss,latent=2,var=False):
+    def __init__(self,in_dim,latent=2,var=False):
         self.in_dim =in_dim
         self.vae = None
         self.ae = None
-        self.loss = loss
         self.aux = None
         self.latent = latent
         self.var = var
@@ -240,7 +239,7 @@ def vasc( expr,
     else:
         expr_train = np.copy( expr )
     
-    vae_ = VASC( in_dim=expr.shape[1],loss = config['loss'],latent=latent,var=var )
+    vae_ = VASC( in_dim=expr.shape[1],latent=latent,var=var )
     vae_.vaeBuild()
     #print_summary( vae_.vae )
     
